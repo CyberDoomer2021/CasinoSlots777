@@ -124,6 +124,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5
+  podarok: 4
+  dollar: 2
+  p: Podarok
 --- !u!61 &2001188433412778369
 BoxCollider2D:
   m_ObjectHideFlags: 0

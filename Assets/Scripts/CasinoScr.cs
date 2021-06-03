@@ -14,12 +14,13 @@ public class CasinoScr : MonoBehaviour
     [SerializeField] GameObject manyMoney;
     [SerializeField] Transform trans;
     [SerializeField] Sprite[] spritemassive;
-    [SerializeField] GameObject image1;
-    [SerializeField] GameObject image2;
-    [SerializeField] GameObject image3;
+    [SerializeField] Image image1;
+    [SerializeField] Image image2;
+    [SerializeField] Image image3;
     [SerializeField] GameObject[] surprises;
     [SerializeField] Transform droppoint;
-   
+
+
 
 
 
@@ -39,7 +40,7 @@ public class CasinoScr : MonoBehaviour
 
     }
 
-
+    
     
     public void rotatetete()
     {
@@ -55,13 +56,13 @@ public class CasinoScr : MonoBehaviour
             i++;
             number1 = Random.Range(0, 5);
         //SlotText1.text = "" + number1;
-        image1.GetComponent<SpriteRenderer>().sprite = spritemassive[number1];
+        image1.sprite = spritemassive[number1];
 
 
 
         number2 = Random.Range(0, 4);
         //SlotText2.text = "" + number2;
-        image2.GetComponent<SpriteRenderer>().sprite = spritemassive[number2];
+        image2.sprite = spritemassive[number2];
 
         if (number2 == 1)
             {
@@ -69,7 +70,7 @@ public class CasinoScr : MonoBehaviour
                 number2 = number1;
                 number3 = Random.Range(0, 3);
             //SlotText3.text = "" + number3;
-            image3.GetComponent<SpriteRenderer>().sprite = spritemassive[number3];
+            image3.sprite = spritemassive[number3];
             if (number3 == 1)
                 {
                     
@@ -84,12 +85,8 @@ public class CasinoScr : MonoBehaviour
 
 
             }
-        SlotText1.text = "" + number1;
-        image1.GetComponent<SpriteRenderer>().sprite = spritemassive[number1];
-        SlotText2.text = "" + number2;
-        image2.GetComponent<SpriteRenderer>().sprite = spritemassive[number2];
-        SlotText3.text = "" + number3;
-        image3.GetComponent<SpriteRenderer>().sprite = spritemassive[number3];
+      
+        
 
         if (number1 == number2 && number1 == number3)
             {

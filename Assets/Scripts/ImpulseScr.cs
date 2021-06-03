@@ -7,7 +7,8 @@ public class ImpulseScr : MonoBehaviour
     [SerializeField] float force = 50;
     [SerializeField] float podarok = 4;
     [SerializeField] float dollar = 2;
-    
+    [SerializeField] string p;
+   
 
     Rigidbody2D rb;
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class ImpulseScr : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        CountScr.S.Count( p);
         Destroy(gameObject);
     }
 
